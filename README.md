@@ -1,11 +1,11 @@
-# KVDownMenu
+## KVDownMenu
 
-## 運行環境
+# 運行環境
 Xcode 8.0
 Swift 2.3
 
 
-## 初始化KVDownMenu
+# 初始化KVDownMenu
 以下方式取消了專案預設的頁面進入點，並在application:didFinishLaunchingWithOptions:launchOptions:自己初始化window與頁面。
 
 並把第一個頁面替換成KVDownMenu，而KVDownMenu持有選單頁面與內容頁面(這兩個頁面請自行替換)。
@@ -36,19 +36,19 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 ```
 
 
-在選單頁面中，當使用者點選了某個選項，你可以呼叫以下方法替換內容頁面
+#在選單頁面中，當使用者點選了某個選項，你可以呼叫以下方法替換內容頁面
 ```objc
 self.sideMenuViewController?.changeContentViewControllerAndDismissMenu(vc_you_want_to_change)
 ```
 
 
-在選單頁面中，如果要直接返回內容頁面，你可以呼叫
+#在選單頁面中，如果要直接返回內容頁面，你可以呼叫
 ```objc
 self.sideMenuViewController?.hideMenu()
 ```
 
 
-當進入內容頁面後，你可以呼叫以下方法顯示選單
+#當進入內容頁面後，你可以呼叫以下方法顯示選單
 ```objc
 self.sideMenuViewController?.showMenu()
 ```
