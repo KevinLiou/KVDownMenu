@@ -1,5 +1,8 @@
 # KVDownMenu
 
+## 運行環境
+Xcode 8.0
+Swift 2.3
 
 
 ## 初始化KVDownMenu
@@ -52,3 +55,4 @@ self.sideMenuViewController?.showMenu()
 
 
 ## Demo Video
+[![Demo](http://img.youtube.com/vi/qCUTn2ZHYoM/0.jpg)](http://www.youtube.com/watch?v=qCUTn2ZHYoM)
