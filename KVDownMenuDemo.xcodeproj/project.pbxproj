@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		98BE14281DB6128B0086E0FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE14271DB6128B0086E0FF /* AppDelegate.swift */; };
-		98BE142A1DB6128B0086E0FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE14291DB6128B0086E0FF /* ViewController.swift */; };
 		98BE142D1DB6128B0086E0FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98BE142B1DB6128B0086E0FF /* Main.storyboard */; };
 		98BE142F1DB6128B0086E0FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98BE142E1DB6128B0086E0FF /* Assets.xcassets */; };
 		98BE14321DB6128B0086E0FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98BE14301DB6128B0086E0FF /* LaunchScreen.storyboard */; };
+		98BE143D1DB612B90086E0FF /* KVDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE143A1DB612B90086E0FF /* KVDownMenu.swift */; };
+		98BE143E1DB612B90086E0FF /* SlideDownTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE143B1DB612B90086E0FF /* SlideDownTransitionAnimator.swift */; };
+		98BE143F1DB612B90086E0FF /* UIViewController_KVDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE143C1DB612B90086E0FF /* UIViewController_KVDownMenu.swift */; };
+		98BE14421DB619130086E0FF /* img.json in Resources */ = {isa = PBXBuildFile; fileRef = 98BE14411DB619130086E0FF /* img.json */; };
+		98BE14441DB619500086E0FF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE14431DB619500086E0FF /* MenuViewController.swift */; };
+		98BE14471DB619650086E0FF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE14461DB619650086E0FF /* DetailViewController.swift */; };
+		98BE14491DB61A040086E0FF /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE14481DB61A040086E0FF /* ShadowView.swift */; };
+		98BE144C1DB61BDB0086E0FF /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE144B1DB61BDB0086E0FF /* MenuCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		98BE14241DB6128B0086E0FF /* KVDownMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVDownMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98BE14271DB6128B0086E0FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		98BE14291DB6128B0086E0FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98BE142C1DB6128B0086E0FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98BE142E1DB6128B0086E0FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98BE14311DB6128B0086E0FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98BE14331DB6128B0086E0FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98BE143A1DB612B90086E0FF /* KVDownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KVDownMenu.swift; path = KVMenu/KVDownMenu.swift; sourceTree = "<group>"; };
+		98BE143B1DB612B90086E0FF /* SlideDownTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideDownTransitionAnimator.swift; path = KVMenu/SlideDownTransitionAnimator.swift; sourceTree = "<group>"; };
+		98BE143C1DB612B90086E0FF /* UIViewController_KVDownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController_KVDownMenu.swift; path = KVMenu/UIViewController_KVDownMenu.swift; sourceTree = "<group>"; };
+		98BE14411DB619130086E0FF /* img.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = img.json; sourceTree = "<group>"; };
+		98BE14431DB619500086E0FF /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		98BE14461DB619650086E0FF /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		98BE14481DB61A040086E0FF /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		98BE144B1DB61BDB0086E0FF /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,45 @@
 		98BE14261DB6128B0086E0FF /* KVDownMenuDemo */ = {
 			isa = PBXGroup;
 			children = (
+				98BE144A1DB61A980086E0FF /* View && Cell */,
+				98BE14451DB619540086E0FF /* ViewControllers */,
+				98BE14391DB612AE0086E0FF /* KVMenu */,
 				98BE14271DB6128B0086E0FF /* AppDelegate.swift */,
-				98BE14291DB6128B0086E0FF /* ViewController.swift */,
+				98BE14411DB619130086E0FF /* img.json */,
 				98BE142B1DB6128B0086E0FF /* Main.storyboard */,
 				98BE142E1DB6128B0086E0FF /* Assets.xcassets */,
 				98BE14301DB6128B0086E0FF /* LaunchScreen.storyboard */,
 				98BE14331DB6128B0086E0FF /* Info.plist */,
 			);
 			path = KVDownMenuDemo;
+			sourceTree = "<group>";
+		};
+		98BE14391DB612AE0086E0FF /* KVMenu */ = {
+			isa = PBXGroup;
+			children = (
+				98BE143A1DB612B90086E0FF /* KVDownMenu.swift */,
+				98BE143B1DB612B90086E0FF /* SlideDownTransitionAnimator.swift */,
+				98BE143C1DB612B90086E0FF /* UIViewController_KVDownMenu.swift */,
+			);
+			name = KVMenu;
+			sourceTree = "<group>";
+		};
+		98BE14451DB619540086E0FF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				98BE14431DB619500086E0FF /* MenuViewController.swift */,
+				98BE14461DB619650086E0FF /* DetailViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		98BE144A1DB61A980086E0FF /* View && Cell */ = {
+			isa = PBXGroup;
+			children = (
+				98BE14481DB61A040086E0FF /* ShadowView.swift */,
+				98BE144B1DB61BDB0086E0FF /* MenuCell.swift */,
+			);
+			name = "View && Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98BE14321DB6128B0086E0FF /* LaunchScreen.storyboard in Resources */,
+				98BE14421DB619130086E0FF /* img.json in Resources */,
 				98BE142F1DB6128B0086E0FF /* Assets.xcassets in Resources */,
 				98BE142D1DB6128B0086E0FF /* Main.storyboard in Resources */,
 			);
@@ -137,8 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98BE142A1DB6128B0086E0FF /* ViewController.swift in Sources */,
+				98BE143D1DB612B90086E0FF /* KVDownMenu.swift in Sources */,
+				98BE14441DB619500086E0FF /* MenuViewController.swift in Sources */,
+				98BE143F1DB612B90086E0FF /* UIViewController_KVDownMenu.swift in Sources */,
+				98BE14471DB619650086E0FF /* DetailViewController.swift in Sources */,
+				98BE143E1DB612B90086E0FF /* SlideDownTransitionAnimator.swift in Sources */,
 				98BE14281DB6128B0086E0FF /* AppDelegate.swift in Sources */,
+				98BE144C1DB61BDB0086E0FF /* MenuCell.swift in Sources */,
+				98BE14491DB61A040086E0FF /* ShadowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +316,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.KVDownMenuDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -277,7 +329,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.KVDownMenuDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
