@@ -33,17 +33,22 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 ```
 
 
-在選單頁面中，當使用者選擇了某個選項，你可以呼叫
+在選單頁面中，當使用者點選了某個選項，你可以呼叫以下方法替換內容頁面
 ```objc
 self.sideMenuViewController?.changeContentViewControllerAndDismissMenu(vc_you_want_to_change)
 ```
+
+
 在選單頁面中，如果要直接返回內容頁面，你可以呼叫
 ```objc
 self.sideMenuViewController?.hideMenu()
 ```
+
+
 當進入內容頁面後，你可以呼叫以下方法顯示選單
 ```objc
 self.sideMenuViewController?.showMenu()
 ```
+
 
 ## Demo Video
